@@ -1,9 +1,9 @@
 package com.academy.digitallab.store.customer.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
@@ -11,7 +11,7 @@ import javax.validation.constraints.Size;
 import java.io.Serializable;
 
 @Entity
-@Data @NoArgsConstructor
+@Data @NoArgsConstructor @AllArgsConstructor
 public class Customer implements Serializable {
 
     @Id
@@ -43,6 +43,5 @@ public class Customer implements Serializable {
     private Region region;
     private String state;
 
-    //id, dni, firstName, lastName, email, photoUrl, region, state.
 
 }
