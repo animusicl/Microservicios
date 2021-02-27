@@ -3,12 +3,11 @@ package com.academy.digitallab.store.customer.service;
 import com.academy.digitallab.store.customer.entity.Customer;
 import com.academy.digitallab.store.customer.entity.Region;
 import com.academy.digitallab.store.customer.repository.CustomerRepository;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Slf4j
+
 @Service
 public class CustomerServiceImp implements CustomerService {
 
