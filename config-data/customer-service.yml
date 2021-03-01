@@ -8,7 +8,7 @@ spring:
     driverClassName: com.mysql.jdbc.Driver
     platform: mysql
     username: root
-    password: 785199mga4354
+    password: ${MYSQL_PASS}
 
   # ===============================
   # JPA / HIBERNATE
