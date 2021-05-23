@@ -1,6 +1,7 @@
 package com.academy.digitallab.store.shoppingservice.entity;
 
 
+import com.academy.digitallab.store.shoppingservice.model.Customer;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
@@ -32,6 +33,9 @@ public class Invoice {
     @JoinColumn(name = "invoice_id")
     private List<InvoiceItem> items;
     private String state;
+
+    @Transient
+    private Customer customer;
 
     public Invoice() {
         items = new ArrayList<>();
