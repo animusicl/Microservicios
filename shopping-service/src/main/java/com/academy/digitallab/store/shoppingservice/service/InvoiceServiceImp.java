@@ -59,7 +59,8 @@ public class InvoiceServiceImp implements InvoiceService {
         }).collect(Collectors.toList());
         invoice.setItems(listItem);
     }
-        return invoice;
+
+    return invoice;
     }
 
     @Override

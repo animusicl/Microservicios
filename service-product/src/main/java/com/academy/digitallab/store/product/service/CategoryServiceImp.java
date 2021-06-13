@@ -17,16 +17,19 @@ public class CategoryServiceImp implements CategoryService {
 
     @Override
     public List <Category> listAllCategories() {
+
         return categoryRepository.findAll();
     }
 
     @Override
     public Category getCategory(Long id) {
+
         return categoryRepository.findById(id).orElse(null);
     }
 
     @Override
     public Category createCategory(Category category) {
+
         return categoryRepository.save(category);
     }
 

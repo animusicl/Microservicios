@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.*;
 public interface ProductClient {
 
     @GetMapping("/{id}")
-    public ResponseEntity<Product> getProduct(@RequestParam(name = "id") Long id);
+    ResponseEntity<Product> getProduct(@RequestParam(name = "id") Long id);
 
     @PatchMapping("/{id}/stock")
-    public ResponseEntity <Product> updateSock (
+    ResponseEntity <Product> updateSock (
             @PathVariable("id") Long id,
             @RequestParam (name = "quantity", required = true) Double quantity);
 }
